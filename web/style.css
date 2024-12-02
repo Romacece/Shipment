@@ -1,0 +1,106 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-weight: 600;
+    color: #333;
+}
+
+
+/*Card style*/
+.shipment-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px; 
+}
+
+.shipment-date {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+.shipment-event {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px; 
+}
+
+/* Colors for Statuses */
+.delayed {
+    color: #d9534f; 
+    font-weight: bold;
+}
+
+.exception {
+    color: #f0ad4e; 
+    font-weight: bold;
+}
+
+.icon-map{
+    color: #0b0bf1;
+}
+
+.icon-check{
+    color: #11da40;;
+}
+
+
+/*Comment style*/
+.comments {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.comment-text {
+    max-height: 4.5rem; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.comment-text.expanded {
+    max-height: 1000px;
+}
+
+.toggle-button {
+    display: none;
+    margin-top: 5px;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.toggle-button:hover {
+    color: #005c99;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shipment-event {
+        flex-direction: row; 
+       
+    }
+
+    .shipment-details {
+        margin-top: 10px;
+    }
+
+    .shipment-status {
+        font-size: 0.9rem;
+    }
+
+    .comments {
+        max-height: 30rem; 
+        line-height: 1.5;
+    }
+    
+}
